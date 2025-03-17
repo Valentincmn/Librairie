@@ -31,9 +31,11 @@ if (isset($_POST['submit'])) {
             if (!$data) {
                 echo "Email incorrect ou non trouvé.";
             } elseif (isset($data["mdp"]) && password_verify($mdp, $data["mdp"])) {
-                header("Location: header 2.php");
+                $_SESSION['email'] = $data['email'];
+                $_SESSION['id'] = $data['id'];
                 
-                $_SESSION['email'] = $email;
+                header("Location: ../ACCUEIL/header 2.php");
+                exit();
             } else {
                 echo "Mot de passe incorrect.";
             }

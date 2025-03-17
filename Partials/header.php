@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="/TP Librairie PHP/CSS/login.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="/TP Librairie PHP/CSS/register.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="/TP Librairie PHP/CSS/home.css?v=<?php echo time(); ?>">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</head>
+    
 <body>
     
     <div id="title">

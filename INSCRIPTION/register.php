@@ -1,6 +1,6 @@
 <?php 
 
-include "Partials/header.php";
+include "../Partials/header.php";
 
 
 ?>
@@ -27,10 +27,10 @@ include "Partials/header.php";
                     <button type="submit" name="ok">CRÉE</button>
                     <div class="register">
                         <span>Déja un compte ?</span>
-                        <a href="login.php">Connecté vous</a>
+                        <a href="../CONNEXION/login.php">Connecté vous</a>
                 </form>   
             </section>
         </div>
     </div>
 
-<?php include "Partials/footer.php"; ?> 
+<?php include "../Partials/footer.php"; ?> 
