@@ -1,4 +1,3 @@
-
 <?php
 
 $servername = "localhost";
@@ -19,12 +18,12 @@ if(isset($_POST['ok'])){
     $prenom = $_POST['surname'];
     $nom = $_POST['name'];
     $email = $_POST['email'];
-    $mdp = $_POST['password'];
-}
+    $mdp = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
 $repond = $bdd->exec('USE membre ; INSERT INTO users(prenom,nom,email,mdp) VALUES("'.$prenom.'","'.$nom.'","'.$email.'", "'.$mdp.'");');
 
-header("Location: home.php");
+header("Location: header 2.php");
+}
 
 
 ?>
