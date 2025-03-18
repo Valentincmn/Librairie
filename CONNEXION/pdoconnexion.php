@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
                 exit();
             } else {
                 $_SESSION['error'] = "Mot de passe ou Email incorrect.";
-                header("Location: login.php");
+                header("Location: ../CONNEXION/login.php");
                 exit();
             }
         } catch (PDOException $e) {
