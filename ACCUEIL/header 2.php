@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recherche de Livres</title>
     <!-- Liens vers les fichiers CSS -->
-    <link rel="stylesheet" href="/TP Librairie PHP/CSS/header 2.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="/TP Librairie PHP/CSS/login.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="/TP Librairie PHP/CSS/register.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../CSS/header 2.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../CSS/login.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../CSS/register.css?v=<?php echo time(); ?>">
 </head>
 <body>
     

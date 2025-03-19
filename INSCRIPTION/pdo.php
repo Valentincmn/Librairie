@@ -10,12 +10,10 @@ try {
     // On configure PDO pour qu'il affiche les erreurs
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
-    // On vérifie si le formulaire a été envoyé (si le bouton 'ok' a été cliqué)
+    // On vérifie si le formulaire a été envoyé 
     if(isset($_POST['ok'])) {
         // On récupère les données du formulaire et on les sécurise
-        $prenom = htmlspecialchars($_POST['surname']);    // Protection contre les failles XSS
-        $nom = htmlspecialchars($_POST['name']);         // Protection contre les failles XSS
-        $email = htmlspecialchars($_POST['email']);      // Protection contre les failles XSS
+        $prenom = htmlspecialchars($_POST['surname']);    
         $mdp = password_hash($_POST['password'], PASSWORD_DEFAULT);  // On crypte le mot de passe
 
         // On prépare la requête SQL pour insérer les données
