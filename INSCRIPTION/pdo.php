@@ -14,6 +14,8 @@ try {
     if(isset($_POST['ok'])) {
         // On récupère les données du formulaire et on les sécurise
         $prenom = htmlspecialchars($_POST['surname']);    
+        $nom = htmlspecialchars($_POST['name']); // Ajout de la récupération du nom
+        $email = htmlspecialchars($_POST['email']); // Ajout de la récupération de l'email
         $mdp = password_hash($_POST['password'], PASSWORD_DEFAULT);  // On crypte le mot de passe
 
         // On prépare la requête SQL pour insérer les données
